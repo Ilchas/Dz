@@ -29,16 +29,13 @@ public class MainApp {
         System.out.println( " Колличество собак : "  + Dog.getCountDog());
         System.out.println( " Колличество тигров : " + Tiger.getCountTiger());
 
-        Animals[] CatsandDogsandTigers = {
+        Animals[] Animal = {
                 new Cat("Murzik ", " White", 2, 300,2),
                 new Dog("Bob ", "Black", 5, 560, 15),
-                new Tiger("Far", "Orange", 10, 1000, 100)
         };
-        for (Animals o : CatsandDogsandTigers){
-            o.swimdis();
-            o.rundis();
-            o.voice();
-            o.info();
+        for (Animals o : Animal){
+            o.swimdis(100);
+            o.rundis(400);
         }
     }
 }

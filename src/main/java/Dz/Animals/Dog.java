@@ -13,7 +13,6 @@ public class Dog extends Animals {
         this.swimdistance = swimdistance;
         countDog++;
     }
-    @Override
     public void rundis() {
         if (rundistance > 500) {
             System.out.println(name + " " + rundistance + " m не ну ты в натуре ахуел , хозяин ");
@@ -21,7 +20,6 @@ public class Dog extends Animals {
             System.out.println(name + " " + rundistance + " ща метнусь , хозяин ");
         }
     }
-    @Override
     public void swimdis() {
         if (swimdistance > 10) {
             System.out.println(name + " " + swimdistance + " я не поплыву ");

@@ -13,11 +13,9 @@ public class Cat extends Animals {
         this.swimdistance = swimdistance;
         countCat++;
     }
-        @Override
         public void voice () {
             System.out.println(" Cat meow ");
         }
-        @Override
         public void rundis () {
             if (rundistance > 200) {
                 System.out.println(name + " " + rundistance + "m не побегу , пошел на хуй ");
@@ -25,8 +23,6 @@ public class Cat extends Animals {
                 System.out.println(name + " " + rundistance + " бегу нахуй m ");
             }
         }
-
-        @Override
         public void swimdis () {
             if (swimdistance > 0) {
                 System.out.println(name + " " + swimdistance + " m плыви сам ублюдок ");

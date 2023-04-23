@@ -12,7 +12,6 @@ public class Tiger extends Animals{
         this.swimdistance = swimdistance;
         countTiger ++;
 }
-   @Override
     public void voice(){
         System.out.println( name + " rrr " );
     }
