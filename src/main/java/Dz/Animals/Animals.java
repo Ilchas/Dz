@@ -12,12 +12,12 @@ public abstract class Animals {
         countAnimal++;
     }
 
-    public Animals(String name, String color, int age, int leghtrundistance, int leghtswimdistance) {
+    public Animals(String name, String color, int age, int rundistance, int swimdistance) {
         this.name = name;
         this.color = color;
         this.age = age;
-        rundistance = leghtrundistance;
-        swimdistance = leghtswimdistance;
+        this.rundistance = rundistance;
+        this.swimdistance = swimdistance;
     }
 
     public void info() {
@@ -31,18 +31,18 @@ public abstract class Animals {
     public static int getCountAnimal() {
         return countAnimal;}
 
-        public void rundis ( int lenght) {
-            if (rundistance < lenght) {
-                System.out.println(name + " не могёт" + lenght + " m");
+        public void rundis ( int run) {
+            if (rundistance < run) {
+                System.out.println(name + " не могёт" + run + " m");
             } else {
-                System.out.println(name + " могёт" + lenght + " m");
+                System.out.println(name + " могёт" + run + " m");
             }
         }
-            public void swimdis ( int lenght){
-                if (swimdistance < lenght) {
-                    System.out.println(name + " не могёт" + lenght + " m");
+            public void swimdis ( int swim){
+                if (swimdistance < swim) {
+                    System.out.println(name + " не могёт" + swim + " m");
                 } else {
-                    System.out.println(name + " могёт" + lenght + " m");
+                    System.out.println(name + " могёт" + swim + " m");
                 }
         }
 }

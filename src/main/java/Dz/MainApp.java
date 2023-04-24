@@ -30,12 +30,16 @@ public class MainApp {
         System.out.println( " Колличество тигров : " + Tiger.getCountTiger());
 
         Animals[] Animal = {
-                new Cat("Murzik ", " White", 2, 300,2),
-                new Dog("Bob ", "Black", 5, 560, 15),
+                new Cat("Murzik ", " White", 2, 400 ,11),
+                new Cat("Murzik1 ", " White", 7, 200,10),
+                new Dog("Bob ", "Black", 5, 560, 150),
+                new Dog("Bob1 ", "Black", 7, 199, 9),
         };
         for (Animals o : Animal){
             o.swimdis(100);
             o.rundis(400);
+            o.swimdis(10);
+            o.rundis(201);
         }
     }
 }
